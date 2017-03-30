@@ -13,7 +13,7 @@
  * the canvas' context (ctx) object globally available to make writing app.js
  * a little simpler to work with.
  */
-
+var gameOn = true
 var Engine = (function(global) {
     /* Predefine the variables we'll be using within this scope,
      * create the canvas element, grab the 2D context for that canvas
@@ -45,8 +45,10 @@ var Engine = (function(global) {
         /* Call our update/render functions, pass along the time delta to
          * our update function since it may be used for smooth animation.
          */
+         if(gameOn) {
         update(dt);
         render();
+        }
 
         /* Set our lastTime variable which is used to determine the time delta
          * for the next time this function is called.
@@ -79,7 +81,9 @@ var Engine = (function(global) {
      * on the entities themselves within your app.js file).
      */
     function update(dt) {
+
         updateEntities(dt);
+
         // checkCollisions();
     }
 
@@ -92,9 +96,9 @@ var Engine = (function(global) {
      */
     function updateEntities(dt) {
         allEnemies.forEach(function(enemy) {
-            enemy.update(dt);
+            enemy.update(dt, canvas);
         });
-        player.update();
+        player.update(canvas);
     }
 
     /* This function initially draws the "game level", it will then call
@@ -138,6 +142,8 @@ var Engine = (function(global) {
 
         renderEntities();
     }
+
+    //Game over function
 
     /* This function is called by the render function and is called on each game
      * tick. Its purpose is to then call the render functions you have defined

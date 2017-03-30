@@ -1,6 +1,14 @@
-frontend-nanodegree-arcade-game
-===============================
+#GOKU bug adventure
 
-Students should use this [rubric](https://review.udacity.com/#!/projects/2696458597/rubric) for self-checking their submission. Make sure the functions you write are **object-oriented** - either class functions (like Player and Enemy) or class prototype functions such as Enemy.prototype.checkCollisions, and that the keyword 'this' is used appropriately within your class and class prototype functions to refer to the object the function is called upon. Also be sure that the **readme.md** file is updated with your instructions on both how to 1. Run and 2. Play your arcade game.
+##Intorduction
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+Project is an expansion of the classic arcard game clone.
+
+##Instructions
+
+Project is based on canvas.  The power comes form engine.js, also an image loader is in resources.js.  Game controls are located in the app.js.  Controls are based on key codes.
+
+##Edits
+
+No special libraries, just some plain old Javasript and HTML5 canvas.  Most edits will be done on app.js, but if you feel like messing with engine or resources go for it.
+
