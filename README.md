@@ -6,7 +6,7 @@ Project is an expansion of the classic arcard game clone.
 
 ##Instructions
 
-To play, open index.js in a Chrome browser.  Up arrow moves your character up, down moves down, left moves left, and right moves right.
+To play, open index.html in a Chrome browser.  Up arrow moves your character up, down moves down, left moves left, and right moves right.
 
 If you must avoid the bugs.  If they get you, you will die.  Press enter to restart the game.
 
